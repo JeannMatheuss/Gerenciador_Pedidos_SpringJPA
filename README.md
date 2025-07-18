@@ -9,7 +9,6 @@ Este projeto é um sistema simples de **gerenciamento de pedidos**, desenvolvido
 - [🧪 Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [⚙️ Estrutura do Projeto](#️-estrutura-do-projeto)
 - [🗃️ Modelo de Dados](#️-modelo-de-dados)
-- [🚀 Execução do Projeto](#-execução-do-projeto)
 - [📌 Funcionalidades Demonstradas](#-funcionalidades-demonstradas)
 - [📈 Possíveis Expansões](#-possíveis-expansões)
 
