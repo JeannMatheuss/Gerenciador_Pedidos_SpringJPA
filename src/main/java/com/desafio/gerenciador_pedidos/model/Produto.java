@@ -3,6 +3,7 @@ package com.desafio.gerenciador_pedidos.model;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "gerenciador-pedidos")
 public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
