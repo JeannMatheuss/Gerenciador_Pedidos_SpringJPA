@@ -13,6 +13,9 @@ public class Produto {
     @Column(name = "valor")
     private double preco;
 
+    public Produto() {
+    }
+
     public Produto(String nome, double preco) {
         this.id = id;
         this.nome = nome;
