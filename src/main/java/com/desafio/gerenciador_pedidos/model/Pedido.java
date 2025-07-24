@@ -42,4 +42,12 @@ public class Pedido {
     public void setData(LocalDate data) {
         this.data = data;
     }
+
+    public List<Produto> getProdutos() {
+        return produtos;
+    }
+
+    public void setProdutos(List<Produto> produtos) {
+        this.produtos = produtos;
+    }
 }
