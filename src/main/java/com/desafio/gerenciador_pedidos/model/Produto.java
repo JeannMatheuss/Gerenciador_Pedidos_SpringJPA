@@ -13,6 +13,9 @@ public class Produto {
     @Column(name = "valor")
     private double preco;
 
+    @ManyToOne
+    private Categoria categoria;
+
     public Produto() {
     }
 
