@@ -2,6 +2,8 @@ package com.desafio.gerenciador_pedidos.model;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "gerenciador_pedidos")
 public class Produto {
@@ -15,6 +17,10 @@ public class Produto {
 
     @ManyToOne
     private Categoria categoria;
+
+    @ManyToMany(mappedBy = "produtos")
+    private List<Pedido> pedidos;
+
 
     public Produto() {
     }
