@@ -21,14 +21,20 @@ public class Produto {
     @ManyToMany(mappedBy = "produtos")
     private List<Pedido> pedidos;
 
+    @ManyToOne
+    @JoinColumn(name = "fornecedor_id")
+    private Fornecedor fornecedor;
 
-    public Produto() {
+    public Produto(String livroDeJava, double v, Categoria categoriaLivros) {
     }
 
-    public Produto(String nome, double preco) {
+    public Produto(Long id, String nome, double preco, Categoria categoria, List<Pedido> pedidos, Fornecedor fornecedor) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
+        this.categoria = categoria;
+        this.pedidos = pedidos;
+        this.fornecedor = fornecedor;
     }
 
     public Long getId() {
@@ -69,5 +75,13 @@ public class Produto {
 
     public void setPedidos(List<Pedido> pedidos) {
         this.pedidos = pedidos;
+    }
+
+    public Fornecedor getFornecedor() {
+        return fornecedor;
+    }
+
+    public void setFornecedor(Fornecedor fornecedor) {
+        this.fornecedor = fornecedor;
     }
 }
